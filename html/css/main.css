@@ -1,0 +1,60 @@
+body{
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo{
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.user-btn {
+    font-size: 1.7em;
+
+    width: 60px;
+    text-align: center; 
+}
+
+.main-notice-container{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+
+.main-notice-container:hover {
+    cursor: pointer;
+}
+
+.main-notice-container a{
+    margin: 5px 0px 0px 10px;
+}
+
+.table-title{
+    font-size: larger;
+    padding-left: 20px;
+}
+
+.main-btn-container{
+    display: flex;
+    justify-content: space-around;
+
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+}
+
+.main-btn-container button{
+    width: 300px;
+}
+
+.more-link:hover{
+    cursor: pointer;
+}
