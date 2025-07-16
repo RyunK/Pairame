@@ -4,25 +4,14 @@ body{
     margin-right: auto;
 }
 
-p a h5{
+p, a, h5{
     margin: 0;
 }
 
-.logo{
-    font-size: larger;
-    font-weight: bolder;
-}
-
-.logo:hover {
+a:hover{
     cursor: pointer;
 }
 
-.user-btn {
-    font-size: 1.7em;
-
-    width: 60px;
-    text-align: center; 
-}
 
 .main-notice-container{
     margin-top: 50px;
@@ -32,19 +21,7 @@ p a h5{
 }
 
 
-.main-notice-container:hover {
-    cursor: pointer;
-}
 
-.main-notice-container a{
-    margin: 5px 0px 0px 10px;
-}
-
-
-.table-title{
-    font-size: larger;
-    padding-left: 20px;
-}
 
 .main-btn-container{
     /* display: flex; */
@@ -61,9 +38,7 @@ p a h5{
     width: 300px;
 }
 
-.more-link:hover{
-    cursor: pointer;
-}
+
 
 
 
@@ -112,3 +87,30 @@ p a h5{
 
     border-radius: 5px;
 }
+
+.thumbnail-container{
+    width: 200px;
+    height: 112.5px;
+    background-color: blueviolet;
+}
+
+.thumbnail-container img{
+    width: 200px;
+    height: 112.5px;
+}
+
+.frame-list-right {
+    width:106.98px
+}
+
+.checkbox-btn{
+    appearance: none;
+}
+
+
+.checkbox-btn-label:hover{
+    cursor: pointer;
+
+    color: var(--bs-secondary-color)
+}
+
