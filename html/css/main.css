@@ -4,6 +4,10 @@ body{
     margin-right: auto;
 }
 
+p a h5{
+    margin: 0;
+}
+
 .logo{
     font-size: larger;
     font-weight: bolder;
@@ -36,19 +40,21 @@ body{
     margin: 5px 0px 0px 10px;
 }
 
+
 .table-title{
     font-size: larger;
     padding-left: 20px;
 }
 
 .main-btn-container{
-    display: flex;
+    /* display: flex; */
     justify-content: space-around;
 
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     width: 35%;
+    min-width: 400px;
 }
 
 .main-btn-container button{
@@ -57,4 +63,52 @@ body{
 
 .more-link:hover{
     cursor: pointer;
+}
+
+
+
+.nav-container{
+    padding: 0 50px 0 50px;
+}
+
+.nav-item{
+    padding: 0 10px 0 10px;
+}
+
+.nav-item i{
+    font-size: 1.5em;
+}
+
+.navbar-nav .dropdown-menu{
+    left: -40px;
+}
+
+.main-notice-container p{
+    font-size: 0.9 em;
+}
+
+.main-btn-contaier button{
+    min-width: 220px;
+}
+
+.ad{
+    width: 500px;
+    height: 300px;
+    background-color: aquamarine;
+
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.main-forum-preview-title a{
+    font-size: 12px;
+}
+
+.main-forum-preview-title{
+    padding-top: 12px;
+    padding-bottom: 3px;
+
+    border-radius: 5px;
 }

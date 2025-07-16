@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>페레임</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid nav-container ">
+            <a class="navbar-brand" href="#">Pairame</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-md-flex justify-content-end align-items-center" id="navbarNavDropdown">
+                <ul class="navbar-nav ">
+                    <li class="nav-item d-flex align-items-center ">
+                    <a class="nav-link " href="#">게시판</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                    <a class="nav-link" href="#">이용 안내</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle nav-icon-cotainer" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person-circle"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">로그인/회원가입</a></li>
+                        <li><a class="dropdown-item" href="#">마이페이지</a></li>
+                        <li><a class="dropdown-item" href="#">회원정보</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 이용 안내 -->
+    <div class="main-notice-container">
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">이용 안내</h5>
+                <small class="text-body-secondary">더보기</small>
+                </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action main-notice-container-item">
+                <div class="d-md-flex w-100 align-items-center">
+                <p class="me-2">25.07.10 <span class="ms-2 pe-2 border-end">공지사항 </span></p>
+                <p class="">틀을 사용하실 때 저작권에 유의해주세요.</p>
+                </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action main-notice-container-item">
+                <div class="d-md-flex w-100 align-items-center">
+                <p class="me-2">25.07.01 <span class="ms-2 pe-2 border-end">업데이트 </span></p>
+                <p class="">신규 기능이 업데이트 되었습니다!</p>
+                </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action main-notice-container-item">
+                <div class="d-md-flex w-100 align-items-center">
+                <p class="me-2">25.06.12 <span class="ms-2 pe-2 border-end">업데이트 </span></p>
+                <p class="">최초 배포!</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+    <!-- 버튼들 -->
+    <div class="main-btn-container d-md-flex d-grid gap-3 ">
+        <button type="button" class="btn btn-primary btn-lg"><i class="bi bi-file-earmark-plus"></i> 새로 만들기</button>
+        <button type="button" class="btn btn-warning btn-lg"><i class="bi bi-images"></i> 마이페이지</button>
+    </div>
+
+    <div class="ad">
+        애드온 광고
+    </div>
+
+    <!-- 게시판 미리보기 -->
+    <div class="main-notice-container ">
+        <div class="border ps-3 pe-3 main-forum-preview-title d-flex justify-content-between">
+            <div class="d-flex">
+                <h5 class="text-secondary me-2">게시판</h5>
+                <a class="link-secondary link-offset-2 link-underline-opacity-0 link-opacity-75 link-opacity-100-hover">최신순</a>
+                <a class="link-secondary link-offset-2 link-underline-opacity-0 link-opacity-75 link-opacity-100-hover">저장순</a>
+            </div>
+            <a class="link-opacity-50-hover">더보기</a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
