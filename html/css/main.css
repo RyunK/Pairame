@@ -4,7 +4,7 @@ body{
     margin-right: auto;
 }
 
-p, a, h5{
+p, a, h5, small{
     margin: 0;
 }
 
@@ -17,6 +17,7 @@ a:hover{
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
     width: 60%;
 }
 
@@ -100,7 +101,8 @@ a:hover{
 }
 
 .frame-list-right {
-    width:106.98px
+    /* width:110px */
+    /* float: right; */
 }
 
 .checkbox-btn{
