@@ -100,11 +100,6 @@ a:hover{
     height: 112.5px;
 }
 
-.frame-list-right {
-    /* width:110px */
-    /* float: right; */
-}
-
 .checkbox-btn{
     appearance: none;
 }
@@ -116,3 +111,63 @@ a:hover{
     color: var(--bs-secondary-color)
 }
 
+.page-title{
+    margin: 30px;
+    font-weight: bolder;
+}
+
+.search-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-container input{
+    border-color: var(--bs-body-color);
+}
+
+.content-container{
+    width: 90%;
+    max-width: 1600px;
+
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;;
+}
+
+.content-container a{
+    font-size: 14px;
+}
+
+.pagination > li > a
+{
+    background-color: white;
+    color: #5A4181;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: #5a5a5a;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.pagination > .active > a
+{
+    color: white;
+    background-color: var(--bs-body-color) !Important;
+    border: solid 1px var(--bs-body-color) !Important;
+}
+
+.pagination > .active > a:hover,
+.pagination > .active > a:focus
+{
+    background-color: var(--bs-secondary-color) !Important;
+    border: solid 1px var(--bs-secondary-color) !Important;
+    color: white;
+
+}
