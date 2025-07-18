@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>페레임 - 틀 제목</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/frame_title.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid nav-container ">
+            <a class="navbar-brand" href="#">Pairame</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-md-flex justify-content-end align-items-center" id="navbarNavDropdown">
+                <ul class="navbar-nav ">
+                    <li class="nav-item d-flex align-items-center">
+                    <a class="nav-link " href="#">게시판</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                    <a class="nav-link" href="#">이용 안내</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle nav-icon-cotainer" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person-circle"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">로그인/회원가입</a></li>
+                        <li><a class="dropdown-item" href="#">마이페이지</a></li>
+                        <li><a class="dropdown-item" href="#">회원정보</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-title">
+        <h5 >틀 제목</h5>
+        <small>ID: 1234567890</small>
+    </div>
+
+    <div class="preview d-flex justify-content-center align-items-center">
+        <h5>미리보기</h5>
+
+    </div>
+
+    
+    <div class="bottom-box d-flex">
+        <div class="frame-info">
+            <div class=" d-flex mb-4 align-items-baseline">
+                <h5 class="fw-bolder me-1">제작자 이름</h5>
+                <small>@creator12</small>
+            </div>
+            <div class=" border rounded p-4">
+                
+                <h6 class="fw-bolder mb-3">안내문</h6>
+
+                <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odit quis, sed praesentium ratione quam adipisci illo magni accusamus doloribus minima, inventore iusto? Amet, maxime dolorem minima quasi neque quas!</p>
+
+            </div>
+        </div>
+        <div class="bottom-btn-container mt-4 d-flex flex-column align-items-center ">
+            <button type="button" class="d-block w-100  mb-2 btn btn-lg btn-outline-success">이 틀에 넣기</button>
+            <label class=" title-bookmark checkbox-btn-label bookmark-label"><input type="checkbox" class="bookmark-btn checkbox-btn"><i class="bi bi-bookmark-plus"></i> 북마크 </label>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+
+        $(document).on('change', '.bookmark-btn', function(e){
+            let icon = $(this).siblings('i');
+            if($(this).is(':checked')){
+                icon.removeClass("bi-bookmark-plus");
+                icon.addClass("bi-bookmark-plus-fill");
+
+            } else {
+                icon.removeClass("bi-bookmark-plus-fill");
+                icon.addClass("bi-bookmark-plus");
+
+            }
+            
+        })
+
+    </script>
+
+</body>
+</html>

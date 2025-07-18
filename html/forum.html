@@ -41,21 +41,25 @@
         </div>
     </nav>
 
-    <h5 class="page-title">게시판</h5>
-
-
-    <div class="search-container">
-        <div class="input-group mb-3">
-            <button class="search-option btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">제목</button>
-            <ul class="dropdown-menu search-menu">
-                <li><a class="dropdown-item search-item" href="#">제목</a></li>
-                <li><a class="dropdown-item search-item" href="#">제작자</a></li>
-                <li><a class="dropdown-item search-item" href="#">ID</a></li>
-            </ul>
-            <input type="text" class="form-control " aria-label="Text input with dropdown button" placeholder="검색">
-            <button class="btn btn-outline-dark" type="button"><i class="bi bi-search"></i></button>
-        </div>
+    <div class="page-title">
+        <h5 >게시판</h5>
     </div>
+
+
+    <section class="search-container">
+        <form action="#">
+            <div class="input-group mb-3">
+                <button class="search-option btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">제목</button>
+                <ul class="dropdown-menu search-menu">
+                    <li><span class="dropdown-item search-item" >제목</span></li>
+                    <li><span class="dropdown-item search-item" >제작자</span></li>
+                    <li><span class="dropdown-item search-item" >틀 ID</span></li>
+                </ul>
+                <input type="text" name="query" class="form-control " aria-label="Text input with dropdown button" placeholder="검색">
+                <button class="btn btn-outline-dark" type="submit"><i class="bi bi-search"></i></button>
+            </div>
+        </form>
+    </section>
 
     <div class="content-container ">
         <div class=" ps-3 pe-3 mb-2  d-flex justify-content-between align-items-baseline">
@@ -266,7 +270,7 @@
                     <div class="ms-3 flex-fill">
                         <div class="d-flex ">
                             <h5 class="me-2">틀 제목</h5><small>ID: <span>1234567890</span></small>
-                        </div>
+                        </div>ㄴ
                         <small>제작자</small>
                         <p>안내 문구</p>
                     </div>
